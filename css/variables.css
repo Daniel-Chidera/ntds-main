@@ -1,0 +1,92 @@
+/* ============================================
+   NTDS - CSS Variables
+   Colors, Typography, Spacing
+   ============================================ */
+
+:root {
+  /* ===== COLOR PALETTE ===== */
+  
+  /* Light Mode Colors */
+  --primary-bg: #FFFFFF;
+  --secondary-bg: #F8F9FA;
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B7280;
+  --accent-purple: #6A0DAD;
+  --purple-light: #8B5CF6;
+  --purple-lighter: #A78BFA;
+  --purple-lightest: #DDD6FE;
+  --purple-dark: #5B0A91;
+  --purple-darker: #4A0773;
+  
+  /* Border & Shadow */
+  --border-color: #E5E7EB;
+  --shadow-sm: 0 2px 8px rgba(106, 13, 173, 0.08);
+  --shadow-md: 0 4px 16px rgba(106, 13, 173, 0.12);
+  --shadow-lg: 0 8px 32px rgba(106, 13, 173, 0.16);
+  
+  /* ===== TYPOGRAPHY ===== */
+  --font-heading: 'Space Grotesk', 'Sora', sans-serif;
+  --font-body: 'Inter', 'DM Sans', sans-serif;
+  
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+  --font-size-6xl: 3.75rem;   /* 60px */
+  
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  
+  /* ===== SPACING ===== */
+  --spacing-xs: 0.5rem;    /* 8px */
+  --spacing-sm: 1rem;      /* 16px */
+  --spacing-md: 1.5rem;    /* 24px */
+  --spacing-lg: 2rem;      /* 32px */
+  --spacing-xl: 3rem;      /* 48px */
+  --spacing-2xl: 4rem;     /* 64px */
+  --spacing-3xl: 6rem;     /* 96px */
+  
+  /* ===== LAYOUT ===== */
+  --container-max: 1200px;
+  --container-padding: 2rem;
+  --navbar-height: 80px;
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 30px;
+  
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ===== DARK MODE VARIABLES ===== */
+[data-theme="dark"] {
+  --primary-bg: #0A0A0A;
+  --secondary-bg: #1A1A1A;
+  --text-primary: #FFFFFF;
+  --text-secondary: #9CA3AF;
+  --accent-purple: #8B5CF6;
+  --purple-light: #A78BFA;
+  --purple-lighter: #C4B5FD;
+  --purple-lightest: #DDD6FE;
+  --purple-dark: #7C3AED;
+  --purple-darker: #6D28D9;
+  
+  --border-color: #2D2D2D;
+  --shadow-sm: 0 2px 8px rgba(139, 92, 246, 0.15);
+  --shadow-md: 0 4px 16px rgba(139, 92, 246, 0.2);
+  --shadow-lg: 0 8px 32px rgba(139, 92, 246, 0.25);
+}
+
+/* ===== GOOGLE FONTS IMPORT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');

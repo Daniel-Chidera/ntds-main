@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="NTDS - NextGen Technova Digital Solutions. We build custom websites, apps, and digital solutions.">
+    <title>NTDS - Digital Products Creators</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-logo">
+            <img src="img/ndts logo2.png" alt="ntds-loading-screen">
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">
+            <img src="img/ndts logo2.png" alt="ntds-logo">
+        </a>
+
+        <ul class="navbar-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="staff-login.html">Staff Login</a></li>
+        </ul>
+
+        <div class="navbar-actions">
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" />
+                </svg>
+            </button>
+            <a href="contact.html" class="btn-primary">Let's Talk</a>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <ul class="mobile-menu closed">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="staff-login.html">Staff Login</a></li>
+            <li>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" />
+                    </svg>
+                </button>
+            </li>
+            <li><a href="contact.html" class="btn-primary">Let's Talk</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content animate-on-scroll slide-up">
+                <h1>We Are Digital Products Creators</h1>
+                <p class="hero-subtitle">
+                    At NextGen Technova Digital Solutions (NTDS), we are committed to pioneering innovative tech and
+                    digital solutions that empower businesses, enhance experiences, and drive digital transformation.
+                </p>
+                <a href="contact.html" class="btn-hero">Contact Us</a>
+            </div>
+
+            <div class="hero-visual animate-on-scroll slide-left stagger-2">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop"
+                    alt="Team collaboration" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Tabs Section -->
+    <section class="services">
+        <div class="container">
+            <p class="section-label">Our Services</p>
+            <h2 class="section-title">Three Powerful Solutions. One Seamless Experience.</h2>
+
+            <div class="service-tabs-wrapper">
+                <div class="service-tabs">
+                    <button class="tab-btn active" data-tab="website">Website Development</button>
+                    <button class="tab-btn" data-tab="app">Mobile App Development</button>
+                    <button class="tab-btn" data-tab="marketing">Digital Marketing</button>
+                </div>
+
+                <div class="tab-panels">
+                    <!-- Website Development -->
+                    <div class="tab-panel active" id="website">
+                        <div class="panel-content">
+                            <h3>Professional Website Development</h3>
+                            <p>We create stunning, high-performance websites tailored to your business needs. From
+                                concept to launch, we handle everything.</p>
+
+                            <div class="service-types">
+                                <span class="service-badge pulse">E-commerce Websites</span>
+                                <span class="service-badge pulse delay-1">Corporate Websites</span>
+                                <span class="service-badge pulse delay-2">Personal Portfolios</span>
+                                <span class="service-badge pulse delay-3">Landing Pages</span>
+                                <span class="service-badge pulse delay-4">CMS Platforms</span>
+                            </div>
+
+                            <a href="services.html#website" class="btn-secondary">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- App Development -->
+                    <div class="tab-panel" id="app">
+                        <div class="panel-content">
+                            <h3>Mobile & Web App Development</h3>
+                            <p>Build powerful, scalable applications that deliver exceptional user experiences across
+                                all platforms.</p>
+
+                            <div class="service-types">
+                                <span class="service-badge pulse">iOS Applications</span>
+                                <span class="service-badge pulse delay-1">Android Applications</span>
+                                <span class="service-badge pulse delay-2">Progressive Web Apps</span>
+                                <span class="service-badge pulse delay-3">Cross-Platform Apps</span>
+                                <span class="service-badge pulse delay-4">Enterprise Solutions</span>
+                            </div>
+
+                            <a href="services.html#app" class="btn-secondary">Learn More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Digital Marketing -->
+                    <div class="tab-panel" id="marketing">
+                        <div class="panel-content">
+                            <h3>Strategic Digital Marketing</h3>
+                            <p>Grow your business with data-driven marketing strategies that reach and engage your
+                                target audience effectively.</p>
+
+                            <div class="service-types">
+                                <span class="service-badge pulse">SEO Optimization</span>
+                                <span class="service-badge pulse delay-1">Social Media Marketing</span>
+                                <span class="service-badge pulse delay-2">Content Strategy</span>
+                                <span class="service-badge pulse delay-3">Email Campaigns</span>
+                                <span class="service-badge pulse delay-4">PPC Advertising</span>
+                            </div>
+
+                            <a href="services.html#marketing" class="btn-secondary">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <p class="section-label">How We Work</p>
+            <h2 class="section-title">Our Process</h2>
+
+            <div class="process-timeline">
+                <div class="process-item animate-on-scroll slide-up stagger-1">
+                    <div class="process-number">01</div>
+                    <h4>Consultation</h4>
+                    <p>We understand your vision and requirements</p>
+                </div>
+
+                <div class="process-item animate-on-scroll slide-up stagger-2">
+                    <div class="process-number">02</div>
+                    <h4>Design</h4>
+                    <p>Create beautiful, user-friendly interfaces</p>
+                </div>
+
+                <div class="process-item animate-on-scroll slide-up stagger-3">
+                    <div class="process-number">03</div>
+                    <h4>Development</h4>
+                    <p>Build with clean, scalable code</p>
+                </div>
+
+                <div class="process-item animate-on-scroll slide-up stagger-4">
+                    <div class="process-number">04</div>
+                    <h4>Testing</h4>
+                    <p>Ensure quality and performance</p>
+                </div>
+
+                <div class="process-item animate-on-scroll slide-up stagger-5">
+                    <div class="process-number">05</div>
+                    <h4>Launch</h4>
+                    <p>Deploy and celebrate success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <p class="section-label">Technologies We Use</p>
+            <h2 class="section-title">Built With Modern Tools</h2>
+
+            <div class="tech-grid">
+                <div class="tech-item pulse-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item pulse-icon delay-1">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-item pulse-icon delay-2">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                        alt="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item pulse-icon delay-3">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    <span>React</span>
+                </div>
+                <div class="tech-item pulse-icon delay-4">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                    <span>PHP</span>
+                </div>
+                <div class="tech-item pulse-icon delay-5">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                        alt="Node.js">
+                    <span>Node.js</span>
+                </div>
+                <div class="tech-item pulse-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <span>Git</span>
+                </div>
+                <div class="tech-item pulse-icon delay-1">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <span>MySQL</span>
+                </div>
+                <div class="tech-item pulse-icon delay-1">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+                        alt="MySQL">
+                    <span>WordPress</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="team-video">
+        <div class="container">
+            <div class="video-wrapper animate-on-scroll slide-right">
+                <h2>Meet Our Team</h2>
+                <p>Watch how we create digital experiences that make a difference</p>
+            </div>
+
+            <div class="video-box animate-on-scroll slide-left stagger-2">
+                <!-- Replace with your video embed -->
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=500&fit=crop"
+                    alt="Team working" class="video-thumbnail">
+                <div class="video-overlay">
+                    <div class="play-btn">▶</div>
+                    <p>Click to add your team video</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card animate-on-scroll scale-up stagger-1">
+                    <div class="counter" data-target="50" data-suffix="+">0</div>
+                    <p>Projects Completed</p>
+                </div>
+
+                <div class="stat-card animate-on-scroll scale-up stagger-2">
+                    <div class="counter" data-target="3" data-suffix="">0</div>
+                    <p>Years Experience</p>
+                </div>
+
+                <div class="stat-card animate-on-scroll scale-up stagger-3">
+                    <div class="counter" data-target="100" data-suffix="%">0</div>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <p class="section-label">Testimonials</p>
+            <h2 class="section-title">What Our Clients Say</h2>
+
+            <div class="testimonial-grid">
+                <div class="testimonial-card animate-on-scroll slide-up stagger-1">
+                    <div class="testimonial-header">
+                        <img src="https://i.pravatar.cc/100?img=12" alt="John Doe" class="client-avatar">
+                        <div>
+                            <strong>John Doe</strong>
+                            <span>CEO, Tech Startup</span>
+                        </div>
+                    </div>
+                    <p>"NTDS transformed our online presence completely. Professional, fast, and exceeded all
+                        expectations!"</p>
+                </div>
+
+                <div class="testimonial-card animate-on-scroll slide-up stagger-2">
+                    <div class="testimonial-header">
+                        <img src="https://i.pravatar.cc/100?img=5" alt="Jane Smith" class="client-avatar">
+                        <div>
+                            <strong>Jane Smith</strong>
+                            <span>Founder, E-commerce Brand</span>
+                        </div>
+                    </div>
+                    <p>"Working with NTDS was seamless. They delivered our app on time and within budget. Highly
+                        recommend!"</p>
+                </div>
+
+                <div class="testimonial-card animate-on-scroll slide-up stagger-3">
+                    <div class="testimonial-header">
+                        <img src="https://i.pravatar.cc/100?img=33" alt="Mike Johnson" class="client-avatar">
+                        <div>
+                            <strong>Mike Johnson</strong>
+                            <span>Marketing Director</span>
+                        </div>
+                    </div>
+                    <p>"Best decision we made. Their team is creative, responsive, and truly understands digital
+                        solutions."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="faq-title-section">
+                <p class="section-label">FAQ</p>
+                <h2>Frequently Asked Questions</h2>
+              </div>
+              
+              <div class="faq-layout">
+                <div class="faq-image-wrapper">
+                  <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=600&fit=crop" alt="Questions" class="faq-image">
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item animate-on-scroll slide-up stagger-1">
+                        <button class="faq-question">
+                            <span>How long does it take to build a website?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Typically 2-4 weeks for a standard website, depending on complexity and requirements.
+                                We'll provide a detailed timeline during consultation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll slide-up stagger-2">
+                        <button class="faq-question">
+                            <span>Do you offer maintenance and support?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! We provide ongoing maintenance, updates, and technical support packages to keep your
+                                digital products running smoothly.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll slide-up stagger-3">
+                        <button class="faq-question">
+                            <span>What is your pricing structure?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer flexible pricing based on project scope. Contact us for a free consultation and
+                                customized quote tailored to your needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item animate-on-scroll slide-up stagger-4">
+                        <button class="faq-question">
+                            <span>Can you work with existing systems?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! We can integrate with your existing platforms, databases, and third-party
+                                services for seamless operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2 class="animate-on-scroll fade-in">Ready to Transform Your Digital Presence?</h2>
+            <p class="animate-on-scroll fade-in stagger-1">Let's discuss how we can bring your vision to life</p>
+            <a href="contact.html" class="btn-hero animate-on-scroll scale-up stagger-2">Let's Talk</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>NTDS</h4>
+                    <p>Building digital products that empower businesses and drive transformation.</p>
+
+                    <div class="social-links">
+                        <a href="#" aria-label="WhatsApp">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="X (Twitter)">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="staff-login.html">Staff Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Get In Touch</h4>
+                    <p>Ready to start your project? Let's create something amazing together.</p>
+                    <a href="contact.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Contact
+                        Us</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 NextGen Technova Digital Solutions (NTDS). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>

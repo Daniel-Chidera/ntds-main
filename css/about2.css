@@ -245,7 +245,7 @@
 .solutions-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 40px;
 }
 
 .solution-card {
@@ -379,8 +379,8 @@
 
 .tech-scroll {
   display: flex;
-  gap: 40px;
-  animation: scroll-left 25s linear infinite;
+  gap: 48px;
+  animation: scroll-left 30s linear infinite;
   width: max-content;
 }
 
@@ -398,18 +398,33 @@
 }
 
 .tech-item {
-  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+  background: var(--primary-bg);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  min-width: 140px;
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  border-color: var(--accent-purple);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .tech-item img {
   width: 48px;
   height: 48px;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
 }
 
-.tech-item:hover img {
-  opacity: 1;
+.tech-item span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
 }
 
 /* About CTA */
@@ -427,11 +442,6 @@
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
-}
-
-.about-cta .btn-hero{
-  background-color: var(--purple-darker) !important;
-  color: white;
 }
 
 .about-cta p {

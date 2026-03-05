@@ -1,9 +1,3 @@
-/* ============================================
-   NTDS - Global Styles
-   Base styles, Navbar, Footer, Utilities
-   ============================================ */
-
-/* ===== RESET & BASE STYLES ===== */
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +19,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== TYPOGRAPHY ===== */
+/* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   font-weight: var(--font-weight-bold);
@@ -57,21 +51,19 @@ img {
   display: block;
 }
 
-/* ===== CONTAINER ===== */
 .container {
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--container-padding);
 }
 
-/* ===== SECTION SPACING ===== */
 section {
   padding: var(--spacing-3xl) 0;
   position: relative;
   overflow: hidden;
 }
 
-/* ===== LOADING SCREEN ===== */
+/* LOADING SCREEN */
 .loading-screen {
   position: fixed;
   top: 0;
@@ -108,7 +100,7 @@ section {
   }
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 20px;
@@ -207,7 +199,6 @@ section {
   border-radius: 8px;
   width: 40px;
   height: 40px;
-  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -221,8 +212,8 @@ section {
 }
 
 .theme-toggle svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   fill: var(--text-primary);
 }
 
@@ -246,7 +237,7 @@ section {
   border-radius: 2px;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
   background: var(--secondary-bg);
   padding: var(--spacing-3xl) 0 var(--spacing-lg);
@@ -336,7 +327,7 @@ footer {
   margin: 0;
 }
 
-/* ===== UTILITY CLASSES ===== */
+/* UTILITY CLASSES */
 .text-center { text-align: center; }
 .text-purple { color: var(--accent-purple); }
 .bg-secondary { background: var(--secondary-bg); }
@@ -351,7 +342,7 @@ footer {
 .mb-3 { margin-bottom: var(--spacing-md); }
 .mb-4 { margin-bottom: var(--spacing-lg); }
 
-/* ===== CURVY BACKGROUND ELEMENTS ===== */
+/* CURVY BACKGROUND ELEMENTS */
 .bg-curve {
   position: absolute;
   border-radius: 50%;
@@ -384,38 +375,4 @@ footer {
   top: 50%;
   left: -100px;
   transform: translateY(-50%);
-}
-
-/* Coming Soon Notification */
-.coming-soon-notification {
-  position: fixed;
-  top: 30% !important;
-  right: -300px;
-  background: var(--accent-purple);
-  color: #FFF;
-  padding: 16px 32px;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.05em;
-  box-shadow: 0 8px 24px rgba(106, 13, 173, 0.4);
-  z-index: 10000;
-  transition: right 0.3s ease;
-}
-
-.coming-soon-notification.show {
-  right: 20px;
-}
-
-@media (max-width: 768px) {
-  .coming-soon-notification {
-    top: 80px;
-    right: -250px;
-    padding: 14px 24px;
-    font-size: 13px;
-  }
-  
-  .coming-soon-notification.show {
-    right: 16px;
-  }
 }

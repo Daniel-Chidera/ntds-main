@@ -1,9 +1,4 @@
-// ============================================
-// NTDS - Global JavaScript
-// Navbar, Theme Toggle, Scroll Animations
-// ============================================
-
-// ===== LOADING SCREEN =====
+// LOADING SCREEN
 window.addEventListener('load', () => {
   const loadingScreen = document.querySelector('.loading-screen');
   setTimeout(() => {
@@ -11,7 +6,7 @@ window.addEventListener('load', () => {
   }, 2000); // 2 seconds
 });
 
-// ===== THEME TOGGLE (DARK/LIGHT MODE) =====
+// THEME TOGGLE (DARK/LIGHT MODE)
 const themeToggle = document.querySelector('.theme-toggle');
 const html = document.documentElement;
 
@@ -49,18 +44,15 @@ if (themeToggle) {
   });
 }
 
-// ===== MOBILE MENU TOGGLE =====
+// MOBILE MENU TOGGLE
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
 
 if (mobileMenuToggle && mobileMenu) {
-  // Toggle menu
-  mobileMenuToggle.addEventListener('click', (e) => {
-    e.stopPropagation();
+  mobileMenuToggle.addEventListener('click', () => {
     mobileMenuToggle.classList.toggle('active');
     mobileMenu.classList.toggle('open');
-    // Prevent body scroll when menu is open
-    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    mobileMenu.classList.toggle('closed');
   });
   
   // Close mobile menu when a link is clicked
@@ -69,69 +61,12 @@ if (mobileMenuToggle && mobileMenu) {
     link.addEventListener('click', () => {
       mobileMenuToggle.classList.remove('active');
       mobileMenu.classList.remove('open');
-      document.body.style.overflow = '';
+      mobileMenu.classList.add('closed');
     });
   });
-  
-  // Close menu when clicking outside navbar (anywhere on the page)
-  document.addEventListener('click', (e) => {
-    if (mobileMenu.classList.contains('open')) {
-      const navbar = document.querySelector('.navbar');
-      // If click is outside the entire navbar, close menu
-      if (!navbar.contains(e.target)) {
-        mobileMenu.classList.remove('open');
-        mobileMenuToggle.classList.remove('active');
-        document.body.style.overflow = '';
-      }
-    }
-  });
-  
-  // Prevent event bubbling from navbar
-  const navbar = document.querySelector('.navbar');
-  if (navbar) {
-    navbar.addEventListener('click', (e) => {
-      e.stopPropagation();
-    });
-  }
 }
 
-// ===== COMING SOON NOTIFICATION FOR STAFF LOGIN =====
-function showComingSoonNotification() {
-  // Create notification element
-  const notification = document.createElement('div');
-  notification.className = 'coming-soon-notification';
-  notification.textContent = 'COMING SOON';
-  
-  // Add to body
-  document.body.appendChild(notification);
-  
-  // Trigger animation
-  setTimeout(() => {
-    notification.classList.add('show');
-  }, 10);
-  
-  // Remove after 3 seconds
-  setTimeout(() => {
-    notification.classList.remove('show');
-    setTimeout(() => {
-      notification.remove();
-    }, 300);
-  }, 3000);
-}
-
-// Add click event to all staff login links
-document.addEventListener('DOMContentLoaded', () => {
-  const staffLoginLinks = document.querySelectorAll('a[href="staff-login.html"]');
-  
-  staffLoginLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      showComingSoonNotification();
-    });
-  });
-});
-
-// ===== NAVBAR SCROLL EFFECT =====
+// NAVBAR SCROLL EFFECT
 const navbar = document.querySelector('.navbar');
 let lastScroll = 0;
 
@@ -147,7 +82,7 @@ window.addEventListener('scroll', () => {
   lastScroll = currentScroll;
 });
 
-// ===== ACTIVE PAGE HIGHLIGHT =====
+// ACTIVE PAGE HIGHLIGHT
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 const navLinks = document.querySelectorAll('.navbar-menu a, .mobile-menu a');
 
@@ -158,7 +93,7 @@ navLinks.forEach(link => {
   }
 });
 
-// ===== SCROLL ANIMATIONS (INTERSECTION OBSERVER) =====
+// SCROLL ANIMATIONS (INTERSECTION OBSERVER)
 const observerOptions = {
   threshold: 0.2,
   rootMargin: '0px 0px -100px 0px'
@@ -176,7 +111,7 @@ const observer = new IntersectionObserver((entries) => {
 const animatedElements = document.querySelectorAll('.animate-on-scroll');
 animatedElements.forEach(el => observer.observe(el));
 
-// ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+// SMOOTH SCROLL FOR ANCHOR LINKS
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -194,7 +129,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ===== UTILITY: Add Random Animation Classes =====
+// UTILITY: Add Random Animation Classes
 // This function randomly assigns different animation directions
 function randomizeAnimations() {
   const animations = ['slide-up', 'slide-down', 'slide-left', 'slide-right', 'scale-up', 'fade-in'];
@@ -214,5 +149,5 @@ function randomizeAnimations() {
 // Call on page load
 document.addEventListener('DOMContentLoaded', randomizeAnimations);
 
-// ===== PREVENT FOUC (Flash of Unstyled Content) =====
+// PREVENT FOUC (Flash of Unstyled Content)
 document.documentElement.style.visibility = 'visible';

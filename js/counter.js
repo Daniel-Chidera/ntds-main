@@ -1,8 +1,3 @@
-// ============================================
-// NTDS - Counter Animation
-// Animated count-up for statistics
-// ============================================
-
 function animateCounter(element, target, duration = 2000, suffix = '') {
   const start = 0;
   const increment = target / (duration / 16); // 60fps
@@ -16,7 +11,6 @@ function animateCounter(element, target, duration = 2000, suffix = '') {
       clearInterval(timer);
     }
     
-    // Format number with commas
     const formatted = Math.floor(current).toLocaleString();
     element.textContent = formatted + suffix;
   }, 16);

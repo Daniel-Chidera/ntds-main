@@ -1,9 +1,3 @@
-// ============================================
-// NTDS - Global JavaScript
-// Navbar, Theme Toggle, Scroll Animations
-// ============================================
-
-// ===== LOADING SCREEN =====
 window.addEventListener('load', () => {
   const loadingScreen = document.querySelector('.loading-screen');
   setTimeout(() => {
@@ -11,7 +5,7 @@ window.addEventListener('load', () => {
   }, 2000); // 2 seconds
 });
 
-// ===== THEME TOGGLE (DARK/LIGHT MODE) =====
+// THEME TOGGLE (DARK/LIGHT MODE)
 const themeToggle = document.querySelector('.theme-toggle');
 const html = document.documentElement;
 
@@ -49,7 +43,7 @@ if (themeToggle) {
   });
 }
 
-// ===== MOBILE MENU TOGGLE =====
+// MOBILE MENU TOGGLE
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -95,7 +89,7 @@ if (mobileMenuToggle && mobileMenu) {
   }
 }
 
-// ===== COMING SOON NOTIFICATION FOR STAFF LOGIN =====
+// COMING SOON NOTIFICATION FOR STAFF LOGIN
 function showComingSoonNotification() {
   // Create notification element
   const notification = document.createElement('div');
@@ -131,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// ===== NAVBAR SCROLL EFFECT =====
+// NAVBAR SCROLL EFFECT
 const navbar = document.querySelector('.navbar');
 let lastScroll = 0;
 
@@ -147,7 +141,7 @@ window.addEventListener('scroll', () => {
   lastScroll = currentScroll;
 });
 
-// ===== ACTIVE PAGE HIGHLIGHT =====
+// ACTIVE PAGE HIGHLIGHT
 const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 const navLinks = document.querySelectorAll('.navbar-menu a, .mobile-menu a');
 
@@ -158,7 +152,7 @@ navLinks.forEach(link => {
   }
 });
 
-// ===== SCROLL ANIMATIONS (INTERSECTION OBSERVER) =====
+// SCROLL ANIMATIONS (INTERSECTION OBSERVER)
 const observerOptions = {
   threshold: 0.2,
   rootMargin: '0px 0px -100px 0px'
@@ -176,7 +170,7 @@ const observer = new IntersectionObserver((entries) => {
 const animatedElements = document.querySelectorAll('.animate-on-scroll');
 animatedElements.forEach(el => observer.observe(el));
 
-// ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+// SMOOTH SCROLL FOR ANCHOR LINKS
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -194,7 +188,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// ===== UTILITY: Add Random Animation Classes =====
+// UTILITY: Add Random Animation Classes
 // This function randomly assigns different animation directions
 function randomizeAnimations() {
   const animations = ['slide-up', 'slide-down', 'slide-left', 'slide-right', 'scale-up', 'fade-in'];
@@ -214,5 +208,5 @@ function randomizeAnimations() {
 // Call on page load
 document.addEventListener('DOMContentLoaded', randomizeAnimations);
 
-// ===== PREVENT FOUC (Flash of Unstyled Content) =====
+// PREVENT FOUC (Flash of Unstyled Content)
 document.documentElement.style.visibility = 'visible';

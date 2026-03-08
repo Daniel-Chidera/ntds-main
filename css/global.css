@@ -248,10 +248,17 @@ footer {
   margin-bottom: var(--spacing-xl);
 }
 
-.footer-section h4 {
-  font-size: var(--font-size-lg);
-  margin-bottom: var(--spacing-md);
-  color: var(--text-primary);
+.footer-logo {
+  height: 35px;
+  width: auto;
+  margin-bottom: 16px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    height: 28px;
+  }
 }
 
 .footer-section p {

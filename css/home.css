@@ -325,7 +325,7 @@
 
 /* Video Section */
 .team-video {
-  padding: 100px 0;
+  /* padding: 100px 0; */
   background: var(--secondary-bg);
 }
 
@@ -333,7 +333,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* gap: 60px; */
   align-items: center;
   text-align: center;
 }
@@ -355,49 +354,17 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  max-width: 900px;
+  width: 100%;
+  margin-top: 40px;
 }
 
-.video-thumbnail {
+/* VIDEO PLAYER */
+.team-video-player {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #FFF;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.video-overlay:hover {
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.play-btn {
-  width: 80px;
-  height: 80px;
-  background: var(--accent-purple);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
-  margin-bottom: 16px;
-  transition: transform 0.3s ease;
-}
-
-.video-overlay:hover .play-btn {
-  transform: scale(1.1);
+  display: block;
 }
 
 /* Stats */

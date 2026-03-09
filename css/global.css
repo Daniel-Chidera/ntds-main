@@ -382,7 +382,7 @@ footer {
 /* Coming Soon Notification */
 .coming-soon-notification {
   position: fixed;
-  top: 100px;
+  top: 30% !important; 
   right: -300px;
   background: var(--accent-purple);
   color: #FFF;

@@ -1,8 +1,3 @@
-// =====================================================
-// NTDS - Portfolio Filter
-// Filter projects by category
-// =====================================================
-
 document.addEventListener('DOMContentLoaded', () => {
   const filterButtons = document.querySelectorAll('.filter-btn');
   const portfolioItems = document.querySelectorAll('.portfolio-item');
@@ -13,16 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Filter functionality
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      // Skip if button is disabled (coming soon)
       if (button.disabled) return;
       
       const filter = button.getAttribute('data-filter');
       
-      // Update active button
       filterButtons.forEach(btn => btn.classList.remove('active'));
       button.classList.add('active');
       
-      // Filter items
       let visibleCount = 0;
       
       portfolioItems.forEach(item => {
@@ -36,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
       
-      // Show/hide empty state
       if (emptyState) {
         if (visibleCount === 0) {
           emptyState.style.display = 'block';

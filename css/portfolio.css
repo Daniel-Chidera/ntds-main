@@ -1,6 +1,4 @@
-/* Portfolio Page - Professional & Clean */
 
-/* Hero Section */
 .portfolio-hero {
   padding: 160px 0 80px;
   background: linear-gradient(rgba(106, 13, 173, 0.85), rgba(0, 0, 0, 0.7)), 
@@ -23,13 +21,12 @@
   margin: 0 auto;
 }
 
-/* Portfolio Section */
+
 .portfolio-section {
   padding: 40px 0 70px;
   background: var(--primary-bg);
 }
 
-/* Filter Buttons - ROUNDED */
 .portfolio-filters {
   display: flex;
   justify-content: center;
